@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "38f2c1bd-a0c9-44e8-bc13-8ac9104b3661",
+		"name": "week3-posts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15634046"
+	},
+	"item": [
+		{
+			"name": "取得所有貼文",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://homework-lesson3.onrender.com/api/posts",
+					"protocol": "https",
+					"host": [
+						"homework-lesson3",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增一則貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"user222\",\r\n    \"content\": \"今天的天氣真好，希望每天都能這麼陽光普照！\",\r\n    \"likes\": 18,\r\n    \"image\": \"https://example.com/sunnyday.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://homework-lesson3.onrender.com/api/posts",
+					"protocol": "https",
+					"host": [
+						"homework-lesson3",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新一則貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"traveler99\",\r\n    \"content\": \"剛從日本回來，東京的櫻花真的太美了！\",\r\n    \"likes\": 1000,\r\n    \"image\": \"https://example.com/cherryblossoms.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://homework-lesson3.onrender.com/api/posts/66227d7df99012a66c7f45bb",
+					"protocol": "https",
+					"host": [
+						"homework-lesson3",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts",
+						"66227d7df99012a66c7f45bb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://homework-lesson3.onrender.com/api/posts",
+					"protocol": "https",
+					"host": [
+						"homework-lesson3",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除一則貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://homework-lesson3.onrender.com/api/posts/66227da8f99012a66c7f45c3",
+					"protocol": "https",
+					"host": [
+						"homework-lesson3",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts",
+						"66227da8f99012a66c7f45c3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
